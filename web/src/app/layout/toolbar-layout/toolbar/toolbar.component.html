@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="toolbar">
+    <div class="container">
+        <div class="row">
+            <img class="logo" src="../../../../assets/logo/logo.png" alt="">
+            <span class="ml-2 mt-2">KidFlow</span>
+            <span class="example-spacer"></span>
+            <mat-nav-list class="list-horizontal">
+                <mat-list-item>
+                    <a [routerLink]="['/home']">Inicio</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a [routerLink]="['/about']">Preguntas</a>
+                </mat-list-item>
+                <mat-list-item>
+                    <a [routerLink]="['/contact']">Iniciar Sesión</a>
+                </mat-list-item>
+            </mat-nav-list>
+        </div>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,28 @@
+.section-left {
+    background-image: url('../../../../assets/images/background-left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.title-login {
+    font-size: 24px;
+    color: #8bc34a;
+}
+
+.float-logo {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.logo {
+    height: 150px;
+}
+
+.right {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 68%, rgba(3, 169, 244, 0.56) 100%);
+}

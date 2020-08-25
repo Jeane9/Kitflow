@@ -1,0 +1,50 @@
+<div class="container-fluid h-100">
+    <div class="float-logo">
+        <img class="logo" src="../../assets/logo/logo.png" alt="">
+    </div>
+    <div class="row h-100">
+        <div class="col-12 col-lg-6 section-left">
+            <section class="row h-100">
+                <div class="col-12 my-auto section-message">
+                    
+                </div>
+            </section>
+        </div>
+        <div class="right col-12 col-lg-6">
+            <div class="row h-100">
+                <section class="w-100 my-auto">
+                    <div class="row pt-2 pb-2 pt-md-4 pb-md-4 m-0">
+                        <div class="col-12 col-md-8 offset-md-2 text-left title-login">
+                            INICIAR SESIÓN
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form col">
+                            <form [formGroup]="loginForm" action="links/add" method="POST">
+                                <mat-form-field appearance="outline" class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Correo Electrónico</mat-label>
+                                    <input type="email" matInput formControlName="email" placeholder="Correo Electrónico">
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <mat-form-field appearance="outline" class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Contraseña</mat-label>
+                                    <input type="password" matInput formControlName="password" placeholder="Contraseña">
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <div class="row pt-4 mb-2 mx-0">
+                                    <div class="col-xl-8 offset-xl-2">
+                                        <button mat-raised-button color="accent" routerlink='/register' class="text-white w-100">INICIAR SESIÓN</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

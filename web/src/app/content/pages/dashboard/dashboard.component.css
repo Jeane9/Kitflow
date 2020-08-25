@@ -1,0 +1,16 @@
+.background{
+    background-image: url('../../../../assets/images/frame.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-style{
+    cursor: pointer;
+    height: 240px;
+    padding: 40px;
+}
+
+.img-logo{
+    height: 80px;
+    width: 80px;
+}

@@ -1,0 +1,12 @@
+.card-detail{
+    color: white;
+    background-color: #03A9F4;
+}
+.list-item{
+    color: white !important;
+}
+
+.back-message{
+    padding: 5px;
+    background-color: red;
+}

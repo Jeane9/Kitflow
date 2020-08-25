@@ -1,0 +1,146 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-10">
+            <hr>
+        </div>
+        <div class="col-2">
+            <button mat-raised-button color="accent" class="w-100 text-white">Preguntar</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-5">
+            <mat-form-field appearance="outline" color="accent" class="w-100">
+                <mat-icon matPrefix>search</mat-icon>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field appearance="outline" color="accent" class="w-100">
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-1">
+            <div matRipple class="option pt-3 text-center option-select">
+                Todos
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="option pt-3 text-center">
+                Hoy
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="option pt-2 text-center">
+                Esta semana
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="option pt-3 text-center">
+                Este mes
+            </div>
+        </div>
+    </div>
+
+    <section class="questions mt-5">
+        <div class="row">
+            <div class="col-8">
+                <div class="section-question">
+                    <div class="row">
+                        <div class="col-10">
+                            ¿Cuáles son las causas de la Guerra del Pacífico?
+                        </div>
+                        <div class="col-2">
+                            Hace 10 min
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-auto">
+                <div class="row">
+                    <div class="col-6 my-auto">
+                        <button mat-raised-button color="primary" class="w-100 text-white">Aprobar</button>
+                    </div>
+                    <div class="col-6">
+                        <button mat-raised-button color="accent" class="w-100 cancel-button"><mat-icon class="icon-cancel">close</mat-icon> Rechazar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-8">
+                <div class="section-question">
+                    <div class="row">
+                        <div class="col-10">
+                            ¿Cuáles son los elementos de la comunicación?
+                        </div>
+                        <div class="col-2">
+                            Hace 30 min
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-auto">
+                <div class="row">
+                    <div class="col-6 my-auto">
+                        <button mat-raised-button color="primary" class="w-100 text-white">Aprobar</button>
+                    </div>
+                    <div class="col-6">
+                        <button mat-raised-button color="accent" class="w-100 cancel-button"><mat-icon class="icon-cancel">close</mat-icon> Rechazar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-8">
+                <div class="section-question">
+                    <div class="row">
+                        <div class="col-10">
+                            ¿Cómo resolver esta ecuación de primer grado?
+                        </div>
+                        <div class="col-2">
+                            Hace 50 min
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-auto">
+                <div class="row">
+                    <div class="col-6 my-auto">
+                        <button mat-raised-button color="primary" class="w-100 text-white">Aprobar</button>
+                    </div>
+                    <div class="col-6">
+                        <button mat-raised-button color="accent" class="w-100 cancel-button"><mat-icon class="icon-cancel">close</mat-icon> Rechazar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-8">
+                <div class="section-question">
+                    <div class="row">
+                        <div class="col-10">
+                            ¿En qué consiste las fotosíntesis?
+                        </div>
+                        <div class="col-2">
+                            Hace 1 día
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-auto">
+                <div class="row">
+                    <div class="col-6 my-auto">
+                        <button mat-raised-button color="primary" class="w-100 text-white">Aprobar</button>
+                    </div>
+                    <div class="col-6">
+                        <button mat-raised-button color="accent" class="w-100 cancel-button"><mat-icon class="icon-cancel">close</mat-icon> Rechazar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

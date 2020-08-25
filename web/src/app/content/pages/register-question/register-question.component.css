@@ -1,0 +1,24 @@
+.card-question{
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-step{
+    padding: 0;
+}
+
+.descart-button{
+    color: white;
+    background-color: #F08181;
+}
+
+.card-title{
+    padding: 5px 0px;
+    text-align: center;
+    background-color: #03A9F4;
+    color: #FFF;
+}
+
+.step{
+    background-color: #B3E5FC;
+}

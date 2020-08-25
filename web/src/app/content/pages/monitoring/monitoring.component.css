@@ -1,0 +1,28 @@
+.option{
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #8bc34a;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.option-select{
+    background-color: #8bc34a !important;
+    color: #FFF !important;
+}
+
+.section-question{
+    color: #757575;
+    padding: 20px 40px;
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid #0288D1;
+}
+
+.cancel-button{
+    background-color: #C4C4C4;
+}
+
+.icon-cancel{
+    color: #F61111;
+}

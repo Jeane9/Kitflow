@@ -1,0 +1,135 @@
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-12 col-lg-6 section-left">
+            <section class="row h-100">
+                <div class="col-12 my-auto section-message">
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <p class="title-register-message">
+                                Únete a la comunidad de estudiantes
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-8">
+                            <p class="benefits">
+                                KidsFlow brinda los siguientes beneficios:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="../../../../assets/icon/read.png" alt="">
+                                </div>
+                                <div class="col-10 my-auto">
+                                    Comunidad de estudiantes con objetivos de aprendizaje
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="../../../../assets/icon/world.png" alt="">
+                                </div>
+                                <div class="col-10 my-auto">
+                                    Seguridad en la identidad del estudiante y en los contenidos de la página web
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="../../../../assets/icon/check-book.png" alt="">
+                                </div>
+                                <div class="col-10 my-auto">
+                                    Lograr una mayor cantidad de tareas resueltas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="../../../../assets/icon/time.png" alt="">
+                                </div>
+                                <div class="col-10 my-auto">
+                                    Soluciona tus tareas en tiempos cortos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="right col-12 col-lg-6">
+            <div class="row h-100">
+                <section class="w-100 my-auto">
+                    <div class="row pt-2 pb-2 pt-md-4 pb-md-4 m-0">
+                        <div class="col-12 col-md-8 offset-md-2 text-left title-register">
+                            REGISTRO
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form col">
+                            <form [formGroup]="registerForm" autocomplete="off">
+                                <mat-form-field appearance="outline"
+                                    class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Nombre</mat-label>
+                                    <input type="email" matInput formControlName="name" 
+                                        placeholder="Correo Electrónico" [(ngModel)]="padre.nombre">
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <mat-form-field appearance="outline"
+                                    class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Apellido</mat-label>
+                                    <input matInput formControlName="lastName" placeholder="Contraseña" [(ngModel)]="padre.apellido">
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <mat-form-field appearance="outline"
+                                    class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Tipo de Documento</mat-label>
+                                    <mat-select >
+                                        <mat-option value="option1" [(ngModel)]="padre.tipo_doc">DNI</mat-option>
+                                        <mat-option value="option2" [(ngModel)]="padre.tipo_doc">PASAPORTE</mat-option>
+                                    </mat-select>
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <mat-form-field appearance="outline"
+                                    class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Nº de Documento</mat-label>
+                                    <input matInput formControlName="documentNumber" placeholder="Contraseña" [(ngModel)]="padre.nro_doc">
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <mat-form-field appearance="outline"
+                                    class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                                    <mat-label>Contraseña</mat-label>
+                                    <input type="password" matInput formControlName="password" placeholder="Contraseña" [(ngModel)]="padre.contrasena">
+                                    <!-- <mat-error *ngIf="f.email.hasError('required')">
+                                        El número de documento es <strong>requerido</strong>.
+                                    </mat-error> -->
+                                </mat-form-field>
+                                <div class="row justify-content-center">
+                                    <re-captcha (resolved)="resolved($event)" siteKey="6Le5QcIZAAAAAPqx6wTsygbHTpFLbMiBM5y1-nu_"></re-captcha>
+                                </div>
+                                <div class="row pt-4 mb-2 mx-0">
+                                    <div class="col-xl-8 offset-xl-2">
+                                        <button mat-raised-button color="primary" class="text-white w-100" (click)='savePadre()'>REGÍSTRATE</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

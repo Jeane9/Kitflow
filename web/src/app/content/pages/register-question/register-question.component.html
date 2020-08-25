@@ -1,0 +1,140 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-8">
+            <mat-card class="card-question mb-2">
+                <div class="row">
+                    <h2>
+                        Formular pregunta
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>
+                            <strong>
+                                Título
+                            </strong>
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        Sé específico e imagina que estás haciendo la pregunta a otra persona
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field appearance="outline" class="w-100" color="accent">
+                            <mat-label>Escriba la pregunta</mat-label>
+                            <textarea matInput></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        Seleccione el curso al que pertenece la pregunta:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field appearance="outline" class="w-100" color="accent">
+                            <mat-select>
+                                <mat-option *ngFor="let course of courses" [value]="course.value">
+                                    {{course.viewValue}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>
+                            <strong>
+                                Descripción
+                            </strong>
+                        </h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        Incluye toda la información que alguien necesitaría para responder tu pregunta
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ckeditor [editor]="Editor"
+                            data="<p>Hello, csharp corner!</p><br/><br/> <b>This is demo for ckeditor 5 with angular 8</br>">
+                        </ckeditor>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-4">
+                        <button mat-raised-button color="accent" class="w-100 text-white">Revisar pregunta</button>
+                    </div>
+                    <div class="col-4">
+                        <button mat-raised-button class="w-100 descart-button">Descartar borrador</button>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-4">
+            <mat-card class="card-step">
+                <mat-card-title class="card-title">
+                    Pasos a seguir
+                </mat-card-title>
+                <mat-card-content>
+                    <div class="row m-0">
+                        <div class="col-12 step p-1">
+                            <button mat-mini-fab color="accent" class="mr-2 text-white"
+                                aria-label="Example icon button with a filter list icon">
+                                1
+                            </button>
+                            Redacta tu pregunta
+                        </div>
+                        <div class="col-12 pb-2">
+                            <div class="row">
+                                <div class="col-10 offset-1">
+                                    Redacta el tìtulo de tu pregunta y la descripción.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-12 step p-1">
+                            <button mat-mini-fab color="accent" class="mr-2 text-white"
+                                aria-label="Example icon button with a filter list icon">
+                                2
+                            </button>
+                            Revisa tu pregunta
+                        </div>
+                        <div class="col-12 pb-2">
+                            <div class="row">
+                                <div class="col-10 offset-1">
+                                    Se revisa que el título y la descripción estén completos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-12 step p-1">
+                            <button mat-mini-fab color="accent" class="mr-2 text-white"
+                                aria-label="Example icon button with a filter list icon">
+                                3
+                            </button>
+                            Publica tu pregunta
+                        </div>
+                        <div class="col-12 pb-2">
+                            <div class="row">
+                                <div class="col-10 offset-1">
+                                    Ahora todos podrán ver y responder a tu pregunta.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img src="../../../../assets/images/question-image.png" alt="">
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
