@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-login',
@@ -10,7 +11,8 @@ export class LoginComponent implements OnInit {
     loginForm: FormGroup;
 
     constructor(
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private router: Router
     ) { }
 
     ngOnInit(): void {
@@ -22,5 +24,13 @@ export class LoginComponent implements OnInit {
             email: [''],
             password: ['']
         })
+    }
+    logout():void{
+        try{
+            this.router.navigateByUrl('auth/login') ;
+            localStorage.clear();   
+        }catch(e){
+            console.log('Error cleaninglocalstorage', e);
+        }
     }
 }
